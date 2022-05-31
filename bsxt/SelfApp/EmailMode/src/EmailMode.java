@@ -29,7 +29,7 @@ public class EmailMode {
         // 4. 根据 Session 获取邮件传输对象
         Transport transport = session.getTransport();
         // 5、建立连接
-        transport.connect(props.getProperty("form"), "ujorshxkgijlbbjh");
+        transport.connect(props.getProperty("form"), "这里需要更改为邮箱授权码");
         // 6. 发送邮件, 发到所有的收件地址, message.getAllRecipients() 获取到的是在创建邮件对象时添加的所有收件人, 抄送人, 密送人
         transport.sendMessage(message, message.getAllRecipients());
         // 7. 关闭连接
